@@ -1,4 +1,4 @@
-﻿  :root {
+  :root {
     --forest: #1a3d2b;
     --forest-light: #2a5a3f;
     --forest-pale: #e8f0eb;
@@ -34,7 +34,7 @@
     overflow-x: hidden;
   }
 
-  /* â”€â”€â”€ NAV â”€â”€â”€ */
+  /* ─── NAV ─── */
   nav {
     position: fixed;
     top: 0;
@@ -98,7 +98,7 @@
     color: white !important;
   }
 
-  /* â”€â”€â”€ HERO â”€â”€â”€ */
+  /* ─── HERO ─── */
   .hero {
     min-height: 100vh;
     display: grid;
@@ -340,7 +340,7 @@
     font-weight: 500;
   }
 
-  /* â”€â”€â”€ OPPORTUNITY BAND â”€â”€â”€ */
+  /* ─── OPPORTUNITY BAND ─── */
   .opportunity-band {
     background: var(--forest);
     padding: 80px 120px;
@@ -431,7 +431,7 @@
     font-weight: 500;
   }
 
-  /* â”€â”€â”€ SECTION SHARED â”€â”€â”€ */
+  /* ─── SECTION SHARED ─── */
   .section-eyebrow {
     font-size: 0.72rem;
     letter-spacing: 0.22em;
@@ -461,7 +461,7 @@
     color: var(--forest);
   }
 
-  /* â”€â”€â”€ METHODOLOGY â”€â”€â”€ */
+  /* ─── METHODOLOGY ─── */
   .methodology {
     padding: 120px 120px;
     background: var(--off-white);
@@ -502,7 +502,7 @@
   }
 
   .method-card:hover .method-icon {
-    filter: brightness(0) invert(1);
+    color: white;
     opacity: 0.6;
   }
 
@@ -521,10 +521,11 @@
   }
 
   .method-icon {
-    width: 40px;
-    height: 40px;
+    font-size: 40px;
     margin-bottom: 20px;
+    color: var(--forest);
     transition: all 0.3s;
+    display: block;
   }
 
   .method-title {
@@ -561,7 +562,7 @@
     transform: scaleX(1);
   }
 
-  /* â”€â”€â”€ INSIDE OUT â”€â”€â”€ */
+  /* ─── INSIDE OUT ─── */
   .inside-out {
     background: var(--cream);
     padding: 120px;
@@ -624,7 +625,7 @@
   }
 
   .comp-item::before {
-    content: 'â€”';
+    content: '—';
     position: absolute;
     left: 0;
     font-size: 0.7rem;
@@ -706,7 +707,7 @@
     font-weight: 500;
   }
 
-  /* â”€â”€â”€ STEWARDSHIP STORY â”€â”€â”€ */
+  /* ─── STEWARDSHIP STORY ─── */
   .stewardship {
     background: var(--forest);
     padding: 140px 120px;
@@ -871,7 +872,7 @@
     line-height: 1.5;
   }
 
-  /* â”€â”€â”€ SERVICES â”€â”€â”€ */
+  /* ─── SERVICES ─── */
   .services {
     padding: 120px;
     background: var(--off-white);
@@ -1022,7 +1023,7 @@
     user-select: none;
   }
 
-  /* â”€â”€â”€ MISSION BELIEF â”€â”€â”€ */
+  /* ─── MISSION BELIEF ─── */
   .belief {
     background: var(--cream);
     padding: 120px;
@@ -1091,8 +1092,9 @@
   }
 
   .pillar-icon {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: var(--gold);
   }
 
   .pillar-label {
@@ -1103,7 +1105,7 @@
     font-weight: 600;
   }
 
-  /* â”€â”€â”€ CTA â”€â”€â”€ */
+  /* ─── CTA ─── */
   .cta-section {
     background: var(--forest);
     padding: 120px;
@@ -1195,7 +1197,7 @@
     color: var(--gold);
   }
 
-  /* â”€â”€â”€ FOOTER â”€â”€â”€ */
+  /* ─── FOOTER ─── */
   footer {
     background: #111;
     padding: 60px 120px;
@@ -1264,7 +1266,7 @@
     letter-spacing: 0.04em;
   }
 
-  /* â”€â”€â”€ ANIMATIONS â”€â”€â”€ */
+  /* ─── ANIMATIONS ─── */
   @keyframes fadeUp {
     from {
       opacity: 0;
