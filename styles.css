@@ -1,4 +1,4 @@
-﻿  :root {
+  :root {
     --forest: #1a3d2b;
     --forest-light: #2a5a3f;
     --forest-pale: #e8f0eb;
@@ -1305,4 +1305,263 @@
 
   .logo-display {
     animation: fadeUp 1s 0.3s ease both;
+  }
+
+  /* ─── RESPONSIVE ─── */
+
+  @media (max-width: 1024px) {
+    nav {
+      padding: 15px 40px;
+    }
+
+    .hero {
+      padding-top: 80px;
+    }
+
+    .hero-left {
+      padding: 80px 40px;
+    }
+
+    .hero-right {
+      padding: 60px 40px;
+    }
+
+    .opportunity-band, .methodology, .inside-out, .stewardship, .services, .belief, .cta-section, footer {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .method-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    body.no-scroll {
+      overflow: hidden;
+    }
+
+    nav {
+      padding: 15px 24px;
+    }
+
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: var(--off-white);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      transition: 0.4s ease-in-out;
+      z-index: 99;
+    }
+
+    .nav-links.active {
+      right: 0;
+    }
+
+    .nav-links a {
+      font-size: 1.1rem;
+    }
+
+    .nav-mobile-toggle {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .nav-mobile-toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--forest);
+      transition: 0.3s;
+    }
+
+    .nav-mobile-toggle.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-mobile-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-mobile-toggle.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero */
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-left {
+      padding: 140px 24px 60px 24px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      justify-content: center;
+    }
+
+    .hero-eyebrow::before {
+      display: none;
+    }
+
+    .hero-sub {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-cta-group {
+      justify-content: center;
+    }
+
+    .hero-right {
+      padding: 40px 24px 100px 24px;
+    }
+
+    .logo-display img {
+      width: 240px;
+    }
+
+    .hero-stat-strip {
+      position: relative;
+      flex-direction: column;
+      padding: 40px 0;
+    }
+
+    .stat-item {
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    .stat-item + .stat-item {
+      border-left: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Opportunity Band */
+    .opportunity-band {
+      grid-template-columns: 1fr;
+      padding: 60px 24px;
+      gap: 40px;
+    }
+
+    .opp-left h2 {
+      font-size: 2.2rem;
+    }
+
+    .glow-amount {
+      font-size: 2.8rem;
+    }
+
+    /* Methodology */
+    .methodology {
+      padding: 80px 24px;
+    }
+
+    .method-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .method-card {
+      padding: 40px 24px;
+    }
+
+    /* Inside Out */
+    .inside-out {
+      grid-template-columns: 1fr;
+      padding: 80px 24px;
+      gap: 50px;
+    }
+
+    /* Stewardship */
+    .stewardship {
+      padding: 80px 24px;
+    }
+
+    .stewardship-inner {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+
+    /* Services */
+    .services {
+      padding: 80px 24px;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card.featured {
+      grid-column: span 1;
+    }
+
+    .service-card {
+      padding: 40px 24px;
+    }
+
+    /* Belief */
+    .belief {
+      padding: 80px 24px;
+    }
+
+    .pillar-strip {
+      flex-direction: column;
+    }
+
+    .pillar {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* CTA */
+    .cta-section {
+      grid-template-columns: 1fr;
+      padding: 80px 24px;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .cta-actions {
+      align-items: center;
+      width: 100%;
+    }
+
+    .btn-primary, .btn-ghost, .btn-secondary {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      grid-template-columns: 1fr;
+      padding: 60px 24px;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .footer-brand p {
+      margin: 0 auto;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 15px;
+      padding: 30px 24px;
+      text-align: center;
+    }
+  }
+
+  /* ─── SCROLL LOCK ─── */
+  .no-scroll {
+    overflow: hidden !important;
   }

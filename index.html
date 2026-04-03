@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -13,12 +13,17 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Grace in Leadership <span>Advisory</span></div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="#methodology">Our Method</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contact" class="nav-cta">Engage With Us</a></li>
   </ul>
+  <div class="nav-mobile-toggle" id="mobile-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -340,6 +345,53 @@
   <p>(c) 2025 Grace in Leadership Advisory. All rights reserved.</p>
   <p style="color:rgba(255,255,255,0.15);font-size:0.72rem;letter-spacing:0.08em">GRACE - STEWARDSHIP - ALIGNMENT</p>
 </div>
+
+
+<script>
+  // Mobile Menu Toggle
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+  }
+
+  // Close menu when clicking links
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    });
+  });
+
+  // Scroll visibility for nav
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+      nav.style.boxShadow = 'none';
+      return;
+    }
+    
+    if (currentScroll > lastScroll) {
+      // Scrolling down
+      nav.style.transform = 'translateY(-100%)';
+    } else {
+      // Scrolling up
+      nav.style.transform = 'translateY(0)';
+      nav.style.background = 'rgba(250, 249, 247, 0.98)';
+      nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.03)';
+    }
+    lastScroll = currentScroll;
+  });
+</script>
 
 </body>
 </html>
