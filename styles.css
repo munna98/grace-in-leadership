@@ -1,4 +1,4 @@
-  :root {
+﻿  :root {
     --forest: #1a3d2b;
     --forest-light: #2a5a3f;
     --forest-pale: #e8f0eb;
@@ -625,7 +625,7 @@
   }
 
   .comp-item::before {
-    content: '—';
+    content: '-';
     position: absolute;
     left: 0;
     font-size: 0.7rem;
