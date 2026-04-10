@@ -318,9 +318,10 @@
   }
 
   .stat-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
+    font-variant-numeric: lining-nums tabular-nums;
     color: var(--forest);
     display: block;
     line-height: 1;
@@ -411,9 +412,10 @@
   }
 
   .glow-amount {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 3.5rem;
     font-weight: 600;
+    font-variant-numeric: lining-nums tabular-nums;
     color: var(--gold-light);
     line-height: 1;
     margin-bottom: 12px;
@@ -511,9 +513,10 @@
   }
 
   .method-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 5rem;
     font-weight: 700;
+    font-variant-numeric: lining-nums tabular-nums;
     color: var(--forest-pale);
     line-height: 1;
     margin-bottom: 24px;
