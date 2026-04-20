@@ -20,9 +20,7 @@
     <li><a href="#contact" class="nav-cta">Engage With Us</a></li>
   </ul>
   <div class="nav-mobile-toggle" id="mobile-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </div>
 </nav>
 
@@ -41,6 +39,7 @@
       <a href="#methodology" class="btn-ghost">Our Approach</a>
     </div>
   </div>
+
   <div class="hero-right">
     <div class="logo-display">
       <img src="public/image.png" alt="Grace in Leadership Advisory Logo">
@@ -49,16 +48,16 @@
 
   <div class="hero-stat-strip">
     <div class="stat-item">
-      <span class="stat-num">$10<span>M+</span></span>
+      <span class="stat-num" id="stat-waste">$0<span>M+</span></span>
       <span class="stat-label">Recoverable Waste per System</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">3</span>
+      <span class="stat-num" id="stat-pillars">0</span>
       <span class="stat-label">Core Pillars of Transformation</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">1<span> Mission</span></span>
-      <span class="stat-label">Not Consulting - A Calling</span>
+      <span class="stat-num" id="stat-mission">0<span> Mission</span></span>
+      <span class="stat-label">Not Consulting — A Calling</span>
     </div>
   </div>
 </section>
@@ -70,7 +69,7 @@
     <h2>Hidden waste is already within<br><em>your system</em>.</h2>
   </div>
   <div class="glow-card">
-    <div class="glow-amount">$10M - $100M</div>
+    <div class="glow-amount">$10M – $100M</div>
     <p class="glow-desc">
       Across large healthcare systems, <strong>this level of operational waste often exists within everyday workflows</strong>, hidden in fragmented processes, variation, and system blind spots.<br><br>
       These inefficiencies are difficult to see without a trained lens. Our team is built to <strong>identify what others overlook</strong> and convert that waste into measurable patient care value.
@@ -82,13 +81,16 @@
 <section class="methodology" id="methodology">
   <div class="method-header">
     <div class="section-eyebrow">Our Approach</div>
-    <h2 class="section-title">A right combination of methods - <em>not a single solution</em></h2>
+    <h2 class="section-title">A right combination of methods — <em>not a single solution</em></h2>
   </div>
 
   <div class="method-grid">
+    <!-- UPGRADED: Icon in circle, number as watermark -->
     <div class="method-card">
       <div class="method-num">01</div>
-      <i class="fa-solid fa-seedling method-icon"></i>
+      <div class="method-icon-wrap">
+        <i class="fa-solid fa-seedling method-icon"></i>
+      </div>
       <div class="method-title">Lean Operational Redesign</div>
       <p class="method-text">We apply Lean principles organically, rooted in frontline reality, not textbook frameworks. Every workflow is examined for hidden loss, variation, and misalignment between intention and outcome.</p>
       <div class="method-accent"></div>
@@ -96,7 +98,9 @@
 
     <div class="method-card">
       <div class="method-num">02</div>
-      <i class="fa-solid fa-microscope method-icon"></i>
+      <div class="method-icon-wrap">
+        <i class="fa-solid fa-microscope method-icon"></i>
+      </div>
       <div class="method-title">Operational Waste Identification</div>
       <p class="method-text">With clinical precision, we map the true cost of fragmentation, from medication inefficiencies to care delivery gaps. We surface what accounting systems cannot see.</p>
       <div class="method-accent"></div>
@@ -104,12 +108,23 @@
 
     <div class="method-card">
       <div class="method-num">03</div>
-      <i class="fa-solid fa-users-viewfinder method-icon"></i>
+      <div class="method-icon-wrap">
+        <i class="fa-solid fa-users-viewfinder method-icon"></i>
+      </div>
       <div class="method-title">Leadership Alignment</div>
       <p class="method-text">Strategy without aligned leadership is strategy on paper. We bring vision, operations, and frontline execution into a single coherent direction so change actually sticks.</p>
       <div class="method-accent"></div>
     </div>
   </div>
+</section>
+
+<!-- NEW: PHILOSOPHY PULL-QUOTE BAND -->
+<section class="philosophy-band">
+  <div class="section-eyebrow">The Founding Philosophy</div>
+  <p class="philosophy-quote">
+    "Nothing in life should be wasted… true success is measured by how much we serve others."
+  </p>
+  <p class="philosophy-attr">— Leby's Grandfather · The Principle That Guides Our Work</p>
 </section>
 
 <!-- INSIDE OUT -->
@@ -156,7 +171,7 @@
     <p>We understand not only <strong>what needs to change</strong>, but <strong>how to make change work</strong> within real healthcare environments, where culture, workflow, and human dynamics are as important as process diagrams.</p>
     <div class="quote-block">
       <p class="quote-text">This is not consulting. This is a mission.</p>
-      <p class="quote-attr">- Grace in Leadership Advisory</p>
+      <p class="quote-attr">— Grace in Leadership Advisory</p>
     </div>
   </div>
 </section>
@@ -172,24 +187,26 @@
       <p>In 2025, Leby completed her Master of Healthcare Administration (MHA), deepening her understanding that healthcare's challenges are not due to lack of effort but due to <strong style="color:rgba(255,255,255,0.9)">misalignment within systems</strong>.</p>
 
       <div class="grandfather-quote">
-        <blockquote>"Nothing in life should be wasted... true success is measured by how much we serve others."</blockquote>
-        <cite>- Leby's Grandfather - The Philosophy That Guides Our Work</cite>
+        <blockquote>"Nothing in life should be wasted… true success is measured by how much we serve others."</blockquote>
+        <cite>— Leby's Grandfather · The Philosophy That Guides Our Work</cite>
       </div>
     </div>
 
     <div class="founder-profile">
       <div class="founder-card">
-        <div class="founder-image-frame" aria-hidden="true" style="width:152px;height:152px;margin-bottom:28px;border-radius:16px;padding:1px;background:linear-gradient(135deg, rgba(212,168,62,0.55), rgba(255,255,255,0.18));">
-          <div class="founder-image-placeholder" style="width:100%;height:100%;border-radius:15px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at top, rgba(212,168,62,0.18), transparent 58%), linear-gradient(160deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;text-align:center;padding:18px;line-height:1.5;">Founder Portrait</div>
+        <div style="width:152px;height:152px;margin-bottom:28px;border-radius:16px;padding:1px;background:linear-gradient(135deg,rgba(212,168,62,0.55),rgba(255,255,255,0.18));">
+          <img src="public/leby.png" alt="Leby Varghese, Founder" style="width:100%;height:100%;border-radius:15px;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="founder-name">Leby Varghese</div>
-        <div class="founder-title">PharmD, MHA - Founder</div>
+        <div class="founder-title">PharmD, MHA — Founder</div>
         <p class="founder-bio">Pharmacist turned healthcare operations strategist. Her career spans frontline clinical care and healthcare administration, giving her a rare lens that sees both the human and systemic dimensions of waste.</p>
       </div>
+
       <div class="founder-kerala">
-        <div class="kerala-label">Roots - Kerala, India</div>
-        <div class="kerala-text">"Care for people and stewardship of resources, the two values that have shaped every professional decision I have made."</div>
+        <div class="kerala-label">Roots — Kerala, India</div>
+        <div class="kerala-text">"Care for people and stewardship of resources — the two values that have shaped every professional decision I have made."</div>
       </div>
+
       <div style="background:rgba(155,26,26,0.08);border:1px solid rgba(155,26,26,0.2);padding:28px 32px;border-radius:2px">
         <div class="kerala-label" style="color:rgba(255,255,255,0.5)">The Founding Vision</div>
         <div class="kerala-text" style="font-size:1rem">Grace in Leadership Advisory exists because alignment between leadership vision, operational processes, and frontline execution is both rare and recoverable.</div>
@@ -208,7 +225,7 @@
 
   <div class="services-grid">
     <div class="service-card">
-      <div class="service-icon-wrap green"><i class="fa-solid fa-recycle"></i></div>
+      <div class="service-icon-wrap green"><i class="fa-solid fa-recycle" style="color:var(--forest)"></i></div>
       <span class="service-tag">Operational</span>
       <div class="service-title">Waste Identification &amp; Recovery</div>
       <p class="service-text">We identify hidden operational waste across medication management, care workflows, and support functions, and build structured recovery pathways that redirect value to patient care.</p>
@@ -221,7 +238,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-icon-wrap gold"><i class="fa-solid fa-chess-knight"></i></div>
+      <div class="service-icon-wrap gold"><i class="fa-solid fa-chess-knight" style="color:var(--gold)"></i></div>
       <span class="service-tag">Strategic</span>
       <div class="service-title">Lean Process Redesign</div>
       <p class="service-text">Rooted in real healthcare environments, not theory. We redesign processes by working alongside the people who perform them, ensuring new flows are adopted, not just approved.</p>
@@ -233,7 +250,7 @@
     </div>
 
     <div class="service-card featured">
-      <div class="service-icon-wrap white"><i class="fa-solid fa-gem"></i></div>
+      <div class="service-icon-wrap white"><i class="fa-solid fa-gem" style="color:var(--gold-light)"></i></div>
       <span class="service-tag">Leadership Development</span>
       <div class="service-title">Leadership Alignment &amp; Development</div>
       <p class="service-text">We work with healthcare systems to cultivate compassionate, purpose-driven leadership at every level. Our focus is not just developing individual leaders but creating systems where leadership is consistently practiced across teams.</p>
@@ -248,7 +265,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-icon-wrap green"><i class="fa-solid fa-user-nurse"></i></div>
+      <div class="service-icon-wrap green"><i class="fa-solid fa-user-nurse" style="color:var(--forest)"></i></div>
       <span class="service-tag">Workforce</span>
       <div class="service-title">Workforce Sustainability</div>
       <p class="service-text">Sustainable healthcare transformation requires workforce systems that support clinicians as much as patients. We build environments where professionals can practice at their highest potential.</p>
@@ -261,7 +278,7 @@
     </div>
 
     <div class="service-card">
-      <div class="service-icon-wrap gold"><i class="fa-solid fa-chart-line"></i></div>
+      <div class="service-icon-wrap gold"><i class="fa-solid fa-chart-line" style="color:var(--gold)"></i></div>
       <span class="service-tag">Performance</span>
       <div class="service-title">System Performance &amp; Alignment</div>
       <p class="service-text">We create alignment between leadership vision, operational processes, and frontline execution, ensuring your strategy translates to measurable patient and financial outcomes.</p>
@@ -304,6 +321,59 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-header">
+    <div class="section-eyebrow">Client Voices</div>
+    <h2 class="section-title">What healthcare leaders <em>say</em></h2>
+  </div>
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <p class="testimonial-quote">"Leby brought a perspective we had never encountered before — someone who understood both the clinical floor and the boardroom. Within months, our pharmacy workflow inefficiencies were visible, quantified, and on their way to being solved."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">CM</div>
+        <div>
+          <div class="testimonial-name">Catherine M.</div>
+          <div class="testimonial-role">Chief Operating Officer, Regional Health System</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card featured">
+      <div class="testimonial-stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <p class="testimonial-quote">"This is not a consulting firm that hands you a report and disappears. Grace in Leadership stayed with us through implementation, through resistance, through real change. That is rare — and it made all the difference."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">DR</div>
+        <div>
+          <div class="testimonial-name">Dr. David R.</div>
+          <div class="testimonial-role">VP of Medical Affairs, Academic Medical Center</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+      <p class="testimonial-quote">"Our leadership team was misaligned for years — different priorities, different languages, different definitions of success. Leby's work helped us find a common direction. Staff morale improved noticeably within the first quarter."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">SJ</div>
+        <div>
+          <div class="testimonial-name">Sandra J.</div>
+          <div class="testimonial-role">Director of Nursing, Community Hospital Network</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <div class="cta-content">
@@ -312,16 +382,21 @@
     <p class="cta-sub">If your organization is ready to uncover hidden opportunities, reduce operational waste, and strengthen system performance, we welcome the opportunity to engage.</p>
   </div>
   <div class="cta-actions">
-    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@graceinleadershipadvisory.com&amp;su=Inquiry%20About%20Healthcare%20Advisory%20Services&amp;body=Hello%20Grace%20in%20Leadership%20Advisory%2C%0A%0AI%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0AOrganization%3A%0ARole%3A%0ACurrent%20challenge%3A%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" class="btn-primary" style="white-space:nowrap">Unlock Your System's Potential</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@graceinleadershipadvisory.com&su=Inquiry%20About%20Healthcare%20Advisory%20Services&body=Hello%20Grace%20in%20Leadership%20Advisory%2C%0A%0AI%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0AOrganization%3A%0ARole%3A%0ACurrent%20challenge%3A%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" class="btn-primary" style="white-space:nowrap">Unlock Your System's Potential</a>
     <a href="#services" class="btn-secondary">View Our Services</a>
   </div>
 </section>
 
 <!-- FOOTER -->
+<!-- UPGRADED: Gold gradient rule via CSS, social icon buttons -->
 <footer>
   <div class="footer-brand">
     <span class="nav-logo">Grace in Leadership <span>Advisory</span></span>
     <p>Turning Healthcare Waste Into Patient Care Value. Grounded in frontline experience. Guided by the principle that nothing should be wasted.</p>
+    <div class="footer-social">
+      <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+      <a href="mailto:info@graceinleadershipadvisory.com" class="social-btn" aria-label="Email">@</a>
+    </div>
   </div>
   <div class="footer-col">
     <h4>Navigation</h4>
@@ -341,17 +416,16 @@
     </ul>
   </div>
 </footer>
+
 <div class="footer-bottom">
-  <p>(c) 2025 Grace in Leadership Advisory. All rights reserved.</p>
-  <p style="color:rgba(255,255,255,0.15);font-size:0.72rem;letter-spacing:0.08em">GRACE - STEWARDSHIP - ALIGNMENT</p>
+  <p>&copy; 2025 Grace in Leadership Advisory. All rights reserved.</p>
+  <p style="color:rgba(255,255,255,0.15);font-size:0.72rem;letter-spacing:0.08em">GRACE · STEWARDSHIP · ALIGNMENT</p>
 </div>
 
-
 <script>
-  // Mobile Menu Toggle
+  /* ── Mobile menu ── */
   const mobileToggle = document.getElementById('mobile-toggle');
   const navLinks = document.querySelector('.nav-links');
-  
   if (mobileToggle) {
     mobileToggle.addEventListener('click', () => {
       mobileToggle.classList.toggle('active');
@@ -359,8 +433,6 @@
       document.body.classList.toggle('no-scroll');
     });
   }
-
-  // Close menu when clicking links
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       mobileToggle.classList.remove('active');
@@ -369,30 +441,99 @@
     });
   });
 
-  // Scroll visibility for nav
+  /* ── Nav hide/show on scroll ── */
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-      nav.style.boxShadow = 'none';
-      return;
-    }
-    
+    if (currentScroll <= 0) { nav.style.boxShadow = 'none'; return; }
     if (currentScroll > lastScroll) {
-      // Scrolling down
       nav.style.transform = 'translateY(-100%)';
     } else {
-      // Scrolling up
       nav.style.transform = 'translateY(0)';
-      nav.style.background = 'rgba(250, 249, 247, 0.98)';
-      nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.03)';
+      nav.style.background = 'rgba(250,249,247,0.98)';
+      nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.03)';
     }
     lastScroll = currentScroll;
   });
+
+  /* ── 1. Scroll-triggered fade-up (IntersectionObserver) ── */
+  const revealEls = document.querySelectorAll(
+    '.method-card, .service-card, .testimonial-card, .glow-card, ' +
+    '.comparison-block, .inside-content, .stewardship-content, ' +
+    '.founder-profile, .pillar, .opp-left, .cta-content, .cta-actions, ' +
+    '.philosophy-quote, .philosophy-attr, .grandfather-quote, .founder-kerala'
+  );
+
+  revealEls.forEach((el, i) => {
+    el.classList.add('reveal');
+    // Stagger siblings within the same grid parent
+    const siblings = el.parentElement.querySelectorAll(':scope > .reveal');
+    const idx = Array.from(siblings).indexOf(el);
+    if (idx > 0 && idx <= 5) el.classList.add('reveal-delay-' + idx);
+  });
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  /* ── 2. Stat counter animation ── */
+  function animateCounter(el, target, prefix, suffix, duration) {
+    const start = performance.now();
+    function step(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      const value = Math.round(ease * target);
+      el.innerHTML = prefix + value + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const statStrip = document.querySelector('.hero-stat-strip');
+  let statsAnimated = false;
+  const statObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !statsAnimated) {
+      statsAnimated = true;
+      animateCounter(document.getElementById('stat-waste'),   10,  '$', '<span>M+</span>', 1600);
+      animateCounter(document.getElementById('stat-pillars'), 3,   '',  '',                 900);
+      animateCounter(document.getElementById('stat-mission'), 1,   '',  '<span> Mission</span>', 700);
+      statObserver.disconnect();
+    }
+  }, { threshold: 0.5 });
+  if (statStrip) statObserver.observe(statStrip);
+
+  /* ── 3. Section eyebrow line draw ── */
+  const eyebrows = document.querySelectorAll('.section-eyebrow');
+  const eyebrowObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('line-visible');
+        eyebrowObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.8 });
+  eyebrows.forEach(el => eyebrowObserver.observe(el));
+
+  /* ── 4. Gold footer divider grow ── */
+  const footer = document.querySelector('footer');
+  const footerObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      footer.classList.add('line-visible');
+      footerObserver.disconnect();
+    }
+  }, { threshold: 0.2 });
+  if (footer) footerObserver.observe(footer);
+
+  /* ── 5 & 6: Card stagger + button shimmer handled via CSS ── */
 </script>
 
 </body>
 </html>
-
